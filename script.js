@@ -1,16 +1,17 @@
-const url = 'https://quality-porn.p.rapidapi.com/docs';
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'SIGN-UP-FOR-KEY',
-		'X-RapidAPI-Host': 'quality-porn.p.rapidapi.com'
-	}
-};
-
-try {
-	const response = await fetch(url, options);
-	const result = await response.text();
-	console.log(result);
-} catch (error) {
-	console.error(error);
-}
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    const body = document.querySelector('body');
+    const scrollPos = window.scrollY;
+  
+    if (scrollPos > 200 & scrollPos<800) {
+      header.style.backgroundColor = '#000000';
+      body.style.backgroundColor = '#FFF';
+    } else if (scrollPos > 800) {
+      header.style.backgroundColor = '#000000';
+      body.style.backgroundColor = '#FFF';
+    } else {
+      header.style.backgroundColor = '#000000';
+      body.style.backgroundColor = '#333';
+    }
+  });
+  
